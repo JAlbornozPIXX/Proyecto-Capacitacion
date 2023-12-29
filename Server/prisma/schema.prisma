@@ -13,7 +13,7 @@ datasource db {
 model categorias {
   id           String         @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
   created_at   DateTime       @default(now()) @db.Timestamptz(6)
-  nombres      String?
+  nombre      String?
   tipos_hierba tipos_hierba[]
 
   @@schema("public")

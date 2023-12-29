@@ -25,6 +25,8 @@ export class EntradaHierbas{
     @Field(type => Int)
     @Min(0)
     cantidad: number;
+    @Field(type => ID)
+    id_categoria: string;
 }
 
 @InputType()
@@ -35,6 +37,8 @@ export class EditarHierbas{
     @Field(type => Int,{nullable:true})
     @Min(0)
     cantidad: number;
+    @Field(type => ID, {nullable:true})
+    id_categoria: string;
 }
 
 
