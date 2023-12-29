@@ -1,0 +1,4 @@
+//prisma 
+npx prisma db pull  //introspección de su base de datos 
+npx prisma generate  //Ejecutar para actualizar Prisma Client
+   
